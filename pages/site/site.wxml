@@ -1,0 +1,20 @@
+<view class="me-site">
+  <text>我的收货地址{{app.globalData}}</text>
+  <text class="me-site-admin" bindtap="siteDel">管理</text>
+</view>
+<view class="buy-main-box" bindtap="item" data-num="{{index}}" wx:for="{{siteArr}}" wx:key="id">
+  <view class="act-box">
+    <view class="buy-name">
+      <text class="name">{{item.name}}</text>
+      <text class="m">{{item.m}}</text>
+    </view>
+    <view class="buy-site">
+      <text class="site">{{item.site}}{{item.f}}</text>
+    </view>
+  </view>
+  <icon color="#1AAD19" type="cancel" size="30" wx:if="{{flag}}" catchtap="siteDelBtn" data-del="{{index}}"></icon>
+</view>
+<view class="me-site-add" bindtap="siteAdd">
+  <view class="me-site-icon"></view>
+  <text>新增收货地址</text>
+</view>

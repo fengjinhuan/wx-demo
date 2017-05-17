@@ -1,0 +1,41 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view class="box">
+    <view class="box-list" bindtap="hm">
+      <view class="box-list-icon">
+        <view class="list-icon"></view>
+      </view>
+      <text class="box-list-tit">后门餐饮</text>
+    </view>
+    <view class="box-list" bindtap="ct">
+      <view class="box-list-icon">
+        <view class="list-icon"></view>
+      </view>
+      <text class="box-list-tit">能源餐厅</text>
+    </view>
+    <view class="box-list" bindtap="ls">
+      <view class="box-list-icon">
+        <view class="list-icon"></view>
+      </view>
+      <text class="box-list-tit">零食商品</text>
+    </view>
+  </view>
+  <view class="title">
+    <text class="now-title">当前选择</text> : 能源餐厅
+  </view>
+  <view class="box-nav">
+    <view class="nav-list">销量最高</view>|
+    <view class="nav-list">价格最低</view>|
+    <view class="nav-list">能源好评</view>
+  </view>
+  <view class="con-box" wx:for="{{arr}}" wx:key="*this">
+    <navigator class="con-box" url="../list/list?name={{item.userSite}}">
+      <image style="width: 100px; height: 100px;box-shadow: 1px 1px 5px #eee;" src="../../images/hm.png"></image>
+      <view class="con-show">
+        <text class="show-name">店家:{{item.userSite}}</text>
+        <text class="show-pice">低至：test</text>
+      </view>
+    </navigator>
+  </view>
+</view>

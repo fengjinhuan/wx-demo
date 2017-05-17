@@ -1,0 +1,172 @@
+/* pages/buy/buy.wxss */
+
+page {
+  background: #eee;
+}
+
+.buy-box {
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  background: #fff;
+  height: 100rpx;
+  width: 100%;
+  margin-bottom: 10rpx;
+  text-indent: 20rpx;
+  line-height: 100rpx;
+  justify-content: space-between;
+  font-size: 34rpx;
+}
+
+.buy-dw {
+  background: #fff;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  min-height: 140rpx;
+  width: 100%;
+  margin-bottom: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy-dw-icon {
+  margin-right: 20rpx;
+  height: 80rpx;
+  width: 80rpx;
+  background: url(../../images/dw.png) center no-repeat;
+  flex-shrink: 0;
+}
+
+.buy-dw-dz-box {
+  flex-grow: 1;
+}
+
+.buy-main-box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.buy-name {
+  width: 100%;
+  line-height: 80rpx;
+  text-indent: 20rpx;
+}
+
+.name {
+  color: #000;
+  font-size: 34rpx;
+  
+}
+
+.m {
+  color: #888;
+  font-size: 32rpx;
+}
+
+.buy-site {
+  width: 100%;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  color: #888;
+}
+
+
+
+.buy-dw-next {
+  color: #c6c6c6;
+  flex-shrink: 0;
+}
+
+.buy-main {
+  height: auto;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  background: #fff;
+}
+.buy-site{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-indent: 20rpx;
+  color: black;
+  font-size: 34rpx;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.site-name{
+  font-size: 32rpx;
+  color: #888;
+  padding-right: 20rpx;
+}
+
+.buy-fan {
+  min-height: 80rpx;
+  width: 100%;
+  line-height: 80rpx;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  flex-wrap: wrap;
+}
+
+
+
+.buy-fan-name {
+  width: 60%;
+  color: black;
+  font-size: 32rpx;
+}
+.item{
+  display: flex;
+  text-indent: 20rpx;
+}
+
+.buy-fan-all,.buy-fan-num{
+  font-size: 34rpx;
+  color: #000;
+  width:20%;
+
+}
+.buy-fan-song{
+  text-align: center;
+  width: 40%;
+  font-size: 32rpx;
+  color: #888888;
+}
+.buy-fan-num{
+  font-size: 32rpx;
+  color: #888888;
+}
+
+.buy-fan-dai {
+  font-size: 32rpx;
+  color: #000;
+  font-weight: bold;
+}
+
+.buy-right {
+  width: 260rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buy-all {
+  text-indent: 20rpx;
+  border-top: 1px solid #eee;
+  line-height: 100rpx;
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+}
+
+.buy-all text {
+  margin-right: 20rpx;
+}
+.buy-bz {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+}

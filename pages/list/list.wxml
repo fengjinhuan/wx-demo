@@ -1,0 +1,25 @@
+<view wx:if="{{listArr.length>0}}">
+<view class="list"  wx:for="{{listArr}}" wx:key="{{index}}">
+  <image class="list-img" src="{{item.img}}"></image>
+  <view class="list-main">
+    <text class="list-title">{{item.name}}</text>
+    <text class="list-pice">￥ {{item.price}} 元</text>
+  </view>
+  <view class="list-show">
+    <block wx:if="{{item.flag}}">
+      <view class="list-icon jian" bindtap="listJian" data-num="{{item.num}}" data-id="{{item.listId}}" data-name="{{item.name}}">－</view>{{item.num}}
+    </block>
+    <view class="list-icon jia" data-id="{{item.listId}}" bindtap="listAdd" data-num="{{item.num}}" data-name="{{item.name}}">＋</view>
+  </view>
+</view>
+<view class="list-box">
+  <view class="list-num-box">
+    <text class="list-pice-p">总计: ￥{{jg}}元</text>
+    <text class="list-pice-num">配送费 ￥0</text>
+  </view>
+  <view class="list-next" bindtap="nexBuy">去结算</view>
+</view>
+</view>
+<view wx:else  class="center">
+  <text>呜呜,这个店家暂时还没有货!</text>
+</view>

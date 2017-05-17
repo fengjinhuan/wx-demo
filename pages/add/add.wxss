@@ -1,0 +1,32 @@
+page {
+  background: #eee;
+}
+
+.add-tit {
+  padding-left: 20rpx;
+  height: 60rpx;
+  width: 100%;
+  color: #999;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+
+.add-name {
+  height: 80rpx;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 34rpx;
+}
+
+.add-name text {
+  width: 200rpx;
+}
+
+button {
+  margin-top: 40rpx;
+}

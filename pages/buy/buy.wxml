@@ -1,0 +1,45 @@
+
+<!--pages/buy/buy.wxml-->
+<view class="buy-box">
+  配送服务由能源学子配送
+</view>
+<view class="buy-dw" bindtap="chooseSite">
+  <view class="buy-dw-icon"></view>
+  <view class="buy-dw-dz-box">
+    <text wx:if="{{siteChooseflag}}" wx:key="*this">{{siteChoose}}</text>
+    <view class="buy-main-box" hidden="{{siteChooseflag}}">
+      <view class="buy-name">
+        <text class="name">{{name}}</text>
+        <text class="m">{{m}}</text>
+      </view>
+      <view class="buy-site">
+        <text class="site">{{site}}{{f}}</text>
+      </view>
+    </view>
+  </view>
+  <text class="buy-dw-next">></text>
+</view>
+<view class="buy-main">
+  <view class="buy-site">
+      <text class="site-tit">店家:</text>
+      <text class="site-name">{{buySite}}</text>
+  </view>
+  <view class="buy-fan">
+      <view class="item" wx:for="{{buyArr}}" wx:key="*this">
+        <text class="buy-fan-name">{{item.buyName}}</text>
+        <text class="buy-fan-num">x {{item.buyNum}}</text>
+        <text class="buy-fan-all">{{item.buyNum*item.buyPrice}}</text>
+      </view>
+  </view>
+  <view class="buy-all">
+    <text class="buy-fan-name">订单  ￥{{jg}}</text>
+    <text class="buy-fan-song">配送费￥0</text>
+  </view>
+</view>
+<view class="list-box">
+  <view class="list-num-box">
+    <text class="list-pice-p">待支付: ￥{{jg}}元</text>
+    <text class="list-pice-num">配送费 ￥0</text>
+  </view>
+  <view class="list-next" bindtap="nextbuy">立即结算</view>
+</view>

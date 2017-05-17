@@ -1,0 +1,47 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: #fff;
+} 
+.list-box{
+    position: fixed;
+    bottom: 0;
+    height: 100rpx;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #1AAC19;
+    box-sizing: border-box;
+    display: flex;
+    line-height: 100rpx;
+}
+.list-num-box{
+    padding-left: 30rpx;
+    box-sizing: border-box;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.list-next{
+    width: 180rpx;
+    height: 100%;
+    text-align: center;
+    background: #1AAC19;
+    color: #fff;
+}
+.list-pice-num{
+    color: #A5A5A5;
+    font-size: 26rpx;
+    width: 40%;
+    text-align: center;
+}
+.list-pice-p{
+    width: 60%;
+    color: #1AAC19;
+    font-weight: bold;
+}

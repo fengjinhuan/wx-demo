@@ -1,0 +1,21 @@
+<view class="me-user">
+  <image src="../../images/me.png" class="me-user-img"></image>
+</view>
+<view class="me-user-con">
+  <view class="me-site b" bindtap="siteTap">
+    <text>收获地址</text>
+    <text class="me-user-next">></text>
+  </view>
+  <view class="me-site b">
+    <text>我的收藏</text>
+    <text class="me-user-next">></text>
+  </view>
+  <view class="me-site b m">
+    <text>我的钱包</text>
+    <text class="me-user-next">余额：￥0 </text>
+  </view>
+  <view class="me-site b m">
+    <text>联系我们</text>
+    <text class="me-user-next">QQ:625370628</text>
+  </view>
+</view>

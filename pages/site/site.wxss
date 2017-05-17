@@ -1,0 +1,95 @@
+page {
+  background: #eee;
+}
+
+.me-site {
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 36rpx;
+  background: #fff;
+  color: #000;
+  margin-bottom: 10rpx;
+}
+
+.me-site-admin {
+  height: 60rpx;
+  width: 100rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border: 1px solid #666;
+  border-radius: 4px;
+  font-size: 36rpx;
+  color: #000;
+}
+
+.me-site-add {
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 40rpx;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  box-shadow: 0 -2px 5px #f5f5f5;
+}
+
+.me-site-icon {
+  height: 100rpx;
+  width: 100rpx;
+  background-size: contain;
+  background: url(../../images/add.png) center no-repeat;
+}
+
+.buy-main-box {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 0 20rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buy-name {
+  width: 100%;
+  line-height: 80rpx;
+}
+
+.name {
+  margin-right: 20rpx;
+  color: #000;
+  font-size: 48rpx;
+  font-weight: bold;
+}
+
+.m {
+  color: #000;
+  font-size: 42rpx;
+}
+
+.buy-site {
+  width: 100%;
+  line-height: 60rpx;
+  font-size: 40rpx;
+  color: #4f3f77;
+}
+
+.buy-dw-dz {
+  color: #000;
+  font-weight: bold;
+}
+
+.act-box {
+  height: 100%;
+  flex-grow: 1;
+}
